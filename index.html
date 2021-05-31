@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Go Fish</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Tyler HAHAHHAHA">
+    <meta name="description" content="Go fish">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div id="start">
+        <p>The rules of Go Fish:<br>
+            Each player gets dealt 5 cards. Pairs that you have in your hand are automatically sorted. <br>
+            Click on one of the cards to play that card. If the opponent has a card of the same rank, you will take that card
+            and it will be collected as a pair. Or else, "Go Fish" a card. If the rank of the card just pulled matches one of the
+            other cards in your hand, you will sort them into a pair. <br>
+            Your opponent will repeat the same after you make a move, except with their hand. They may think for a while before
+            making their move. <br>
+            The game will end when both of your hands are empty and there are 26 pairs in total. 
+        </p>
+        <button id="startButton" onclick="start()">Start Game</button>
+    </div>
+    <div id="playArea">
+        <div id="border">
+            <div class="points"><img id="pochitchi" src="/cards/avatar.png"></div>
+            <div id="cpuHand"></div>
+            <div class="points"> <span class="points2" id="cpuPoints"></span></div>
+            <div id="deckLeft"><span id="cardsLeft">12</span><img id="deckTop" src="/cards/BackOfCards.png"></div>
+            <div id="feed"></div>
+            <div id="lastPlayed"></div>
+            <div class="points">You</div>
+            <div id="playerHand"></div>
+            <div class="points"><span class="points2" id="playerPoints"></span></div>
+        </div>
+    </div>
+    <div id="playAgain">
+        <h1 id="splash"></h1>
+        <p>Wanna play again?</p>
+        <button onclick="start()">Sure!</button>
+        <button onclick="">Nah!</button>
+    </div>
+    <div id="pairsFormed">
+        <div id="cpuPairs"></div>
+        <div id="yourPairs"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
