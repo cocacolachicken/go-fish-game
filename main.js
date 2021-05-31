@@ -408,7 +408,7 @@ function displayCpu () {
     document.getElementById("cpuHand").innerHTML = "";
     for (let x = 0; x != cpuHand.length; x++) {
         document.getElementById("cpuHand").innerHTML += `<img id="cpuCard${x}" class="card">`;
-        document.getElementById(`cpuCard${x}`).src = "/cards/BackOfCards.png";
+        document.getElementById(`cpuCard${x}`).src = "cards/BackOfCards.png";
     }
 }
 
