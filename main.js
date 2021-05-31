@@ -81,7 +81,7 @@ class Card {
     constructor (suit, rank) {
         this.Suit = suit;
         this.Rank = rank;
-        this.CardName = "/cards/";
+        this.CardName = "cards/";
         this.returnCardName();
     }
     pairCheck (otherCard) {
